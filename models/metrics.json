@@ -1,0 +1,57 @@
+{
+  "best_model": "RandomForest",
+  "best_test_rmse": 297.7547,
+  "all_models": {
+    "RandomForest": {
+      "best_params": {
+        "regressor__max_depth": 10,
+        "regressor__min_samples_split": 5,
+        "regressor__n_estimators": 200
+      },
+      "train_metrics": {
+        "rmse": 199.9882,
+        "mae": 80.4265,
+        "r2": 0.9648
+      },
+      "test_metrics": {
+        "rmse": 297.7547,
+        "mae": 123.6509,
+        "r2": 0.9212
+      }
+    },
+    "GradientBoosting": {
+      "best_params": {
+        "regressor__learning_rate": 0.05,
+        "regressor__max_depth": 5,
+        "regressor__n_estimators": 100
+      },
+      "train_metrics": {
+        "rmse": 242.6645,
+        "mae": 103.8068,
+        "r2": 0.9482
+      },
+      "test_metrics": {
+        "rmse": 299.5617,
+        "mae": 127.8846,
+        "r2": 0.9202
+      }
+    },
+    "XGBoost": {
+      "best_params": {
+        "regressor__learning_rate": 0.05,
+        "regressor__max_depth": 5,
+        "regressor__n_estimators": 100
+      },
+      "train_metrics": {
+        "rmse": 255.5761,
+        "mae": 107.4491,
+        "r2": 0.9425
+      },
+      "test_metrics": {
+        "rmse": 304.7725,
+        "mae": 129.1343,
+        "r2": 0.9174
+      }
+    }
+  }
+}
