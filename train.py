@@ -137,7 +137,7 @@ def train_and_tune(
                     "test_r2": test_metrics["r2"],
                 }
             )
-            mlflow.sklearn.log_model(best_est, artifact_path=f"model_{model_name}")
+            mlflow.sklearn.log_model(best_est, artifact_path=f"model_{model_name}", serialization_format="cloudpickle")
 
             results_summary[model_name] = {
                 "best_params": grid_search.best_params_,
